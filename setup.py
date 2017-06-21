@@ -24,4 +24,7 @@ setup(name='barrelmagazine',
       include_package_data=True,
       zip_safe=True,
       test_suite='barrelmagazine.tests',
+      install_requires={
+          'cachetools'
+      }
 )
