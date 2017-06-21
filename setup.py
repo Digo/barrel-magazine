@@ -23,5 +23,5 @@ setup(name='barrelmagazine',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=True,
-      test_suite='barrel-magazine.tests',
+      test_suite='barrelmagazine.tests',
 )
