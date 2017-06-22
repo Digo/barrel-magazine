@@ -27,6 +27,10 @@ class LRUCache:
         with self._lock:
             return self._cache.pop(key)
 
+    def __contains__(self, item):
+        with self._lock:
+            return item in self._cache
+
     def __getitem__(self, key):
         with self._lock:
             return self._cache[key]
