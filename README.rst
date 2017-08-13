@@ -29,6 +29,7 @@ The cache uses no timeout if the `ttl` value is less than 1.
 The value of `ttl` represents the timeout in seconds.
 
 .. code-block:: python
+
     import time
     import barrelmagazine
 
