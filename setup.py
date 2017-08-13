@@ -1,9 +1,15 @@
+import os
+
 from setuptools import setup, find_packages
 
-version = '1.1'
+module_path = os.path.join(os.path.dirname(__file__), 'barrelmagazine', '__init__.py')
+version_line = [line for line in open(module_path)
+                if line.startswith('__version__')][0]
+
+__version__ = version_line.split('__version__ = ')[-1][1:][:-2]
 
 setup(name='barrelmagazine',
-      version=version,
+      version=__version__,
       description='A thread-safe LRU caching for Python 3.',
       long_description=open('README.md').read(),
       classifiers=[
