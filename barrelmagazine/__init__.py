@@ -6,4 +6,4 @@ import barrelmagazine.lru_cache
 
 LRUCache = barrelmagazine.lru_cache.LRUCache
 
-__version__ = '1.0.2'
+__version__ = '1.1.2'
