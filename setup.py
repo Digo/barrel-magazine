@@ -11,7 +11,7 @@ __version__ = version_line.split('__version__ = ')[-1][1:][:-2]
 setup(name='barrelmagazine',
       version=__version__,
       description='A thread-safe LRU caching for Python 3.',
-      long_description=open('README.md').read(),
+      long_description=open('README.rst').read(),
       classifiers=[
           'Development Status :: 5 - Production/Stable',
           'Intended Audience :: Developers',
